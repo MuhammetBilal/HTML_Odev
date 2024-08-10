@@ -1,0 +1,40 @@
+.output {
+    display: flex;
+    flex-wrap: wrap; /* Kartların alt satıra geçmesini sağlar */
+    gap: 20px; /* Kartlar arasındaki boşluk */
+    justify-content: center; /* Kartları ortalar */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 200px; /* Kart genişliği */
+    background-color: rgb(82, 76, 76);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+}
+
+.img img {
+    width: 100%; /* Resmin genişliği, kartın genişliğine göre ayarlandı */
+    height: auto; /* Yükseklik otomatik ayarlanır */
+    border-radius: 10px;
+}
+
+.explanation, .liking, .price {
+    color: white; /* Metin rengi beyaz */
+    text-align: center; /* Metni ortala */
+}
+
+.explanation {
+    font-size: 14px;
+}
+
+.liking {
+    font-size: 12px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold; /* Fiyatı vurgulamak için kalın font */
+}
